@@ -3,7 +3,7 @@ const connectToMongo = require('./db');
 const express = require('express')
 connectToMongo();
 const app = express()
-const port = 3000;
+const port = https://inotebook-backend.onrender.com;
 var cors = require('cors')
 
 app.use(cors());
