@@ -54,7 +54,7 @@ router.post('/storeData',
             }
          };
 
-         const JWT_SECRET = 'mySuperSecretKey';
+         const JWT_SECRET = process.env.MY_JWT_TOKEN;
          const authToken = jwt.sign(data, JWT_SECRET);
 
          res.status(201).json({
