@@ -105,7 +105,7 @@ router.post('/checkData',
                id: user.id
             }
          }
-         const JWT_SECRET = 'mySuperSecretKey';
+         const JWT_SECRET = process.env.MY_JWT_TOKEN;
          const authToken = jwt.sign(data, JWT_SECRET);
          success = true;
          res.json({ success, authToken })
