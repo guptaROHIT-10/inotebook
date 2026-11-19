@@ -11,7 +11,13 @@ const app = express()
 const port = 3000;
 var cors = require('cors')
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "inotebook-nine-woad.vercel.app"],
+    credentials: true,
+  })
+);
+
 app.use(express.json())
 
 //Avilable Routes
