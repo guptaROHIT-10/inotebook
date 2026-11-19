@@ -7,7 +7,7 @@ connectToMongo();
 
 
 const app = express()
-const port = process.env.REACT_APP_API_URL || 3000;
+const port =  3000 || process.env.REACT_APP_API_URL;
 // const port = 3000;
 var cors = require('cors')
 
